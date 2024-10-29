@@ -1495,14 +1495,16 @@ body.has-active-menu {
 }
 
 .single-post-title {
+	text-shadow: 2px 2px 2px #000;
 	/* font-family: ; */
 	color: #ffffff;
 	text-transform: uppercase;
 }
 
 .post-subtitle {
+	text-shadow: 2px 2px 2px #000;
 	color: #ffffff;
-	opacity: 0.8;
+	/* opacity: 0.8; */
 }
 
 .item-content-bkg {
