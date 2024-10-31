@@ -3254,6 +3254,7 @@ select.reservation-fields {
 	/* height: 50px; */
 	position: fixed;
 	background: rgb(249, 105, 14);
+	color: white;
 	/* background: var(--headings-color); */
 	border-radius: 30px 30px 30px 30px;
 	bottom: 100px;
