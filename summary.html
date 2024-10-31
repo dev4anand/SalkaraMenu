@@ -34,7 +34,6 @@
 
 <body class="body-header1">
     <script>
-        // Retrieve data from sessionStorage and display it
         document.addEventListener('DOMContentLoaded', () => {
             const selectedItems = JSON.parse(sessionStorage.getItem('selectedItems')) || [];
             const totalAmount = sessionStorage.getItem('totalAmount') || 0;
@@ -42,7 +41,7 @@
             const itemsList = document.getElementById('selectedItemsList');
             selectedItems.forEach(item => {
                 const listItem = document.createElement('li');
-                listItem.textContent = `${item.name}      -    ₹${item.price}`;
+                listItem.textContent = `${item.name} - ₹${item.price}`;
                 itemsList.appendChild(listItem);
             });
 
@@ -78,12 +77,10 @@
              <div class="menu-post clearfix">
                 <div class="menu-post-desc">
                    <h4><span class="menu-title"><label for="menu-checkbox"><ul id="selectedItemsList"></ul></label></span></span></h4>
-                   <h6>Total Amount: ₹<span id="finalAmount">0</span></h6>
                 </div>
-                
              </div>
             <!-- <ul id="selectedItemsList"></ul> -->
-            
+            <h6>Total Amount: ₹<span id="finalAmount">0</span></h6>
         </div>
         <!--container-->
     </section>
