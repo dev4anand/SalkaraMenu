@@ -27,8 +27,6 @@ function scrollToMatch() {
   swal("No Item found !", "");
 
 }
-
-
 document.querySelectorAll('.menu-checkbox').forEach(checkbox => {
   checkbox.addEventListener('change', calculateTotal);
 });
@@ -36,9 +34,20 @@ document.querySelectorAll('.menu-checkbox').forEach(checkbox => {
 function calculateTotal() {
   let total = 0;
   document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
-      total += parseInt(item.dataset.price);
+    total += parseInt(item.dataset.price);
   });
-  document.getElementById('totalAmount').textContent = total;
+
+  // Format the total with a currency symbol (optional)
+  const formattedTotal = new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR'
+  }).format(total);
+
+  // Combine the label and total for display
+  const totalWithLabel = `Total: ${formattedTotal}`;
+
+  // Update the content of the new span element
+  document.getElementById('totalAmountWithLabel').textContent = totalWithLabel;
 }
 
 // Proceed button to display selected items on another page
@@ -51,6 +60,6 @@ document.getElementById('proceedBtn').addEventListener('click', () => {
       });
   });
   sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
-  sessionStorage.setItem('totalAmount', document.getElementById('totalAmount').textContent);
+  sessionStorage.setItem('totalAmount', document.getElementById('totalAmountWithLabel').textContent);
   window.location.href = 'summary.html';
 });
