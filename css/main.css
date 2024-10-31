@@ -29,7 +29,7 @@
 .summarybg {
     /* height: 100%; */
     /* width: 100%; */
-    padding-bottom: 70%;
+    padding-bottom: 50%;
     background-color: white;
 }
 /* .transpbag {
@@ -71,16 +71,28 @@
     background-color: white;
 }
 
+/* Hide the checkbox but keep it accessible */
 .menu-checkbox {
-    width: 20px; /* Set width */
-    height: 20px; /* Set height */
-    border-radius: 50%; /* Makes the checkbox round */
-    appearance: none; /* Remove default styling */
-    background-color: #eee; /* Background color */
-    border: 2px solid #aaa; /* Border color */
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Style for highlighting the entire container when checked */
+  .checkbox-container {
     cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  
+  .checkbox-container.checked {
+    border: 1px solid #2f3640;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+    color: inherit; 
+    border-radius: 30px;
 }
-
-.menu-checkbox:checked {
-    background-color: #2f3640;
-}
+  
