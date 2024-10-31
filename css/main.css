@@ -26,7 +26,15 @@
     transition: 0.1s all;
 
 }
-
+.summarybg {
+    /* height: 100%; */
+    /* width: 100%; */
+    padding-bottom: 70%;
+    background-color: white;
+}
+/* .transpbag {
+    background-color: rgba(0, 0, 0, 0.466);
+} */
 .search-btn {
     color: rgb(249, 105, 14);
     float: right;
@@ -62,3 +70,4 @@
 .search-box:hover>.search-btn {
     background-color: white;
 }
+

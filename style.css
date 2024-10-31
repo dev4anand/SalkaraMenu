@@ -3242,7 +3242,26 @@ select.reservation-fields {
 .scrollup {
 	display: none;
 }
-
+.viewdetbtn svg {
+	color:  #2f3640;
+	/* padding-top: 5px; */
+	/* color: var(--headings-color); */
+	/* width: 100%; */
+	/* height: 100%; */
+}
+ .viewdetbtn{
+	/* height: 50px; */
+	position: fixed;
+	background: rgb(249, 105, 14);
+	/* background: var(--headings-color); */
+	border-radius: 30px 30px 30px 30px;
+	bottom: 100px;
+	right: 10px;
+	text-align: end;
+	/* padding-top: 6px; */
+	cursor: pointer;
+	z-index: 120;
+}
 .scrollup i {
 	width: 30px;
 	height: 30px;

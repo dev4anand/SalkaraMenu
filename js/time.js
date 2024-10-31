@@ -27,3 +27,30 @@ function scrollToMatch() {
   swal("No Item found !", "");
 
 }
+
+
+document.querySelectorAll('.menu-checkbox').forEach(checkbox => {
+  checkbox.addEventListener('change', calculateTotal);
+});
+
+function calculateTotal() {
+  let total = 0;
+  document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
+      total += parseInt(item.dataset.price);
+  });
+  document.getElementById('totalAmount').textContent = total;
+}
+
+// Proceed button to display selected items on another page
+document.getElementById('proceedBtn').addEventListener('click', () => {
+  let selectedItems = [];
+  document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
+      selectedItems.push({
+          name: item.dataset.name,
+          price: item.dataset.price
+      });
+  });
+  sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
+  sessionStorage.setItem('totalAmount', document.getElementById('totalAmount').textContent);
+  window.location.href = 'summary.html';
+});
