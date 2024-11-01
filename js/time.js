@@ -1,5 +1,5 @@
 
-
+//search button
 document.getElementById("search-input").addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     scrollToMatch();
@@ -28,8 +28,8 @@ function scrollToMatch() {
 
 }
 
+//checkbox summarry
 
-// Toggle checkbox and style when clicking on the entire .checkbox-container div
 document.querySelectorAll('.checkbox-container').forEach(container => {
   container.addEventListener('click', function (event) {
     // Prevent default checkbox label click behavior
@@ -37,63 +37,15 @@ document.querySelectorAll('.checkbox-container').forEach(container => {
       const checkbox = container.querySelector('.menu-checkbox');
       checkbox.checked = !checkbox.checked; // Toggle checkbox state
       container.classList.toggle('checked', checkbox.checked); // Add/remove 'checked' class
+      toggleProceedButton();     
       calculateTotal(); // Update total after toggle
     }
   });
 });
 
-// Recalculate total whenever a checkbox changes
-function calculateTotal() {
-  let total = 0;
-  
-  // Sum up prices from all checked checkboxes
-  document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
-    total += parseInt(item.dataset.price, 10);
-  });
 
-  // Format the total as INR currency
-  const formattedTotal = new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: 'INR'
-  }).format(total);
-
-  // Display the formatted total in the target element
-  document.getElementById('totalAmountWithLabel').textContent = `Total: ${formattedTotal}`;
-}
-
-// document.querySelectorAll('.checkbox-container').forEach(container => {
-//   container.addEventListener('click', function () {
-//      const checkbox = container.querySelector('.menu-checkbox');
-//      checkbox.checked = !checkbox.checked;
-//      container.classList.toggle('checked', checkbox.checked);
-//   });
-// });
-// document.querySelectorAll('.menu-checkbox').forEach(checkbox => {
-//   checkbox.addEventListener('change', calculateTotal);
-// });
-
-// function calculateTotal() {
-//   let total = 0;
-//   alert(total);
-//   document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
-//     total += parseInt(item.dataset.price);
-//   });
-
-//   // Format the total with a currency symbol (optional)
-//   const formattedTotal = new Intl.NumberFormat('en-IN', {
-//     style: 'currency',
-//     currency: 'INR'
-//   }).format(total);
-
-//   // Combine the label and total for display
-//   const totalWithLabel = `Total: ${formattedTotal}`;
-
-//   // Update the content of the new span element
-//   document.getElementById('totalAmountWithLabel').textContent = totalWithLabel;
-// }
-
-// Proceed button to display selected items on another page
 document.getElementById('proceedBtn').addEventListener('click', () => {
+  // sessionStorage.clear();
   let selectedItems = [];
   document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
       selectedItems.push({
@@ -101,7 +53,70 @@ document.getElementById('proceedBtn').addEventListener('click', () => {
           price: item.dataset.price
       });
   });
-  sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
-  sessionStorage.setItem('totalAmount', document.getElementById('totalAmountWithLabel').textContent);
-  window.location.href = 'summary.html';
+  localStorage.setItem('selectedItems', JSON.stringify(selectedItems));
+  localStorage.setItem('totalAmount', document.getElementById('totalAmountWithLabel').textContent);
+
+  const selectedItemsdis = JSON.parse(localStorage.getItem('selectedItems')) || [];
+  const totalAmount = localStorage.getItem('totalAmount') || 0;
+
+  const itemsList = document.getElementById('selectedItemsList');
+  
+  // Clear the existing items in the list to avoid repetition
+  itemsList.innerHTML = '';
+
+  selectedItemsdis.forEach(item => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${item.name} - ₹${item.price}`;
+      itemsList.appendChild(listItem);
+  });
+
+  document.getElementById('finalAmount').textContent = totalAmount;
 });
+
+//function to calculate the total 
+function calculateTotal() {
+  let total = 0;
+  
+  document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
+    total += parseInt(item.dataset.price, 10);
+  });
+
+  const formattedTotal = new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR'
+  }).format(total);
+
+  document.getElementById('totalAmountWithLabel').textContent = `Total: ${formattedTotal}`;
+}
+
+function toggleProceedButton() {
+  const proceedButton = document.querySelector('.total-section');
+  const anyCheckboxChecked = document.querySelectorAll('.menu-checkbox:checked').length > 0;
+  
+  if (anyCheckboxChecked) {
+    proceedButton.classList.remove('d-none'); // Show the button
+  } else {
+    proceedButton.classList.add('d-none'); // Hide the button
+  }
+}
+
+function loadSelectedItems() {
+  const savedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+  savedItems.forEach(savedItem => {
+    document.querySelectorAll('.menu-checkbox').forEach(checkbox => {
+      if (checkbox.dataset.name === savedItem.name) {
+        checkbox.checked = true;
+        checkbox.closest('.checkbox-container').classList.add('checked');
+      }
+    });
+  });
+  toggleProceedButton(); // Update button visibility
+}
+
+// Call loadSelectedItems on page load
+window.addEventListener('DOMContentLoaded', loadSelectedItems);
+
+function clearStorage(){
+  localStorage.clear();
+        location.reload(); 
+}

@@ -1584,14 +1584,58 @@
                <i class="fas fa-chevron-up"></i>
             </a>
          </div>
-         <div class="total-section">
-            <!-- <p><span id="totalAmount"></span></p> -->
+         <!-- <div class="total-section">
             <div class="viewdetbtn p-0" id="proceedBtn" class="btn "><span id="totalAmountWithLabel"></span><svg
                   xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                   class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                   <path
                      d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
                </svg></div>
+         </div> -->
+
+         <!-- <button type="button" class="btn btn-primary" > -->
+         <div class="total-section d-none" data-toggle="modal" data-target="#exampleModalCenter">
+            <div class="viewdetbtn p-0" id="proceedBtn" class="btn "><span id="totalAmountWithLabel"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                  <path
+                     d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+               </svg></div>
+         </div>
+         <!-- </button> -->
+
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <div class="categ-name-two">
+                        <h2>Order Summary</h2>
+                     </div>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="container">
+                        
+                         <div class="menu-post clearfix">
+                            <div class="menu-post-desc">
+                               <h4><span class="menu-title"><label for="menu-checkbox"><ul id="selectedItemsList"></ul></label></span></span></h4>
+                               <h6>Estimated<span id="finalAmount">0</span></h6>
+            
+                            </div>
+                         </div>
+                        <!-- <ul id="selectedItemsList"></ul> -->
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button type="button" onclick="clearStorage()" class="btn btn-primary">Clear the menu</button>
+                  </div>
+               </div>
+            </div>
          </div>
          <!-- /FOOTER SCROLL UP -->
 
