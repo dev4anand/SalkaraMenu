@@ -1,28 +1,56 @@
+// document.querySelectorAll('.checkbox-container').forEach(container => {
+//     container.addEventListener('click', function (event) {
+//         if (event.target.tagName !== 'INPUT') {
+//             const checkbox = container.querySelector('.menu-checkbox');
+//             checkbox.checked = !checkbox.checked; // Toggle checkbox state
+//             container.classList.toggle('checked', checkbox.checked); // Add/remove 'checked' class
+//             let selectedItems = [];
+//             const totalamount = document.getElementById('totalAmountWithLabel').textContent;
+//             document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
+//                 selectedItems.push({
+//                     name: item.dataset.name,
+//                     price: item.dataset.price,
+//                     totalAmount: totalamount
+//                 });
+//                 localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+
+//             });
+//             calculateTotal();
+//             toggleProceedButton();
+            
+//         }
+//     });
+// });
+
 document.querySelectorAll('.checkbox-container').forEach(container => {
     container.addEventListener('click', function (event) {
         if (event.target.tagName !== 'INPUT') {
             const checkbox = container.querySelector('.menu-checkbox');
             checkbox.checked = !checkbox.checked; // Toggle checkbox state
             container.classList.toggle('checked', checkbox.checked); // Add/remove 'checked' class
-            let selectedItems = [];
-            const totalamount = document.getElementById('totalAmountWithLabel').textContent;
-            // alert(totalamount);
-            document.querySelectorAll('.menu-checkbox:checked').forEach(item => {
-                selectedItems.push({
-                    name: item.dataset.name,
-                    price: item.dataset.price,
-                    totalAmount: totalamount
-                });
-                localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
-                // localStorage.setItem('totalAmount', document.getElementById('totalAmountWithLabel').textContent);
 
-            });
+            let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+            const itemData = {
+                name: checkbox.dataset.name,
+                price: checkbox.dataset.price
+            };
+
+            // If the checkbox is checked, add the item; otherwise, remove it
+            if (checkbox.checked) {
+                selectedItems.push(itemData);
+            } else {
+                selectedItems = selectedItems.filter(item => item.name !== itemData.name);
+            }
+
+            // Save updated selected items to local storage
+            localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+
             calculateTotal();
             toggleProceedButton();
-            
         }
     });
 });
+
 
 function toggleProceedButton() {
     const proceedButton = document.querySelector('.total-section');
