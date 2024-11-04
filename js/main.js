@@ -4,17 +4,17 @@ window.addEventListener('DOMContentLoaded', loadSelectedItems);
 
 function loadSelectedItems() {
     const savedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
-
+    let totalPrice = 0;
     savedItems.forEach(savedItem => {
         // Select the checkbox based on the name
         document.querySelectorAll('.checkbox-container').forEach(checkbox => {
-            let totalPrice = 0;
+            
             if (checkbox.dataset.name === savedItem.name) {
                 checkbox.checked = true;
                 const container = checkbox.closest('.checkbox-container');
                 container.classList.add('checked');
                  totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
-                document.getElementById('totalAmountWithLabel').textContent = ` Total:₹${totalPrice}`;
+               
                 // Update the quantity display
                 const quantityCountDiv = container.querySelector('.quantitycountdiv');
                 if (quantityCountDiv) {
@@ -22,9 +22,13 @@ function loadSelectedItems() {
                 }
             }
         });
+       
     });
-
-    // toggleProceedButton(); // Ensure the proceed button state is updated
+    if(totalPrice != 0){
+        document.getElementById('totalAmountWithLabel').textContent = ` Total:₹${totalPrice}`;
+    }
+    
+    //  toggleProceedButton(); // Ensure the proceed button state is updated
 }
 
 document.querySelectorAll('.checkbox-container').forEach(container => {
@@ -67,11 +71,6 @@ document.querySelectorAll('.checkbox-container').forEach(container => {
             if (itemIndex > -1) selectedItems.splice(itemIndex, 1);
             container.classList.remove('checked');
             localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
-            const quantityCountDiv = container.querySelector('.quantitycountdiv');
-            if (quantityCountDiv) {
-                quantityCountDiv.textContent = '';
-                // quantityCountDiv.remove();
-            }
             return;
         }
 
@@ -239,6 +238,7 @@ document.getElementById('proceedBtn').addEventListener('click', () => {
         <th>Item Name</th>
         <th>Quantity</th>
         <th>Price (₹)</th>
+        <th>Total (₹)</th>
     `;
     table.appendChild(headerRow);
 
@@ -250,6 +250,7 @@ document.getElementById('proceedBtn').addEventListener('click', () => {
         row.innerHTML = `
             <td>${savedItem.name}</td>
             <td>${savedItem.quantity}</td>
+            <td>${savedItem.price}</td>
             <td>₹${(parseFloat(savedItem.price) * savedItem.quantity).toFixed(2)}</td>
         `;
         table.appendChild(row);

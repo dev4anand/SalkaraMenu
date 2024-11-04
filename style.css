@@ -1795,6 +1795,7 @@ body.has-active-menu {
 
 .categ-name-two {
 	text-align: center;
+	padding-left: 40px;
 	/* margin-bottom: 54px; */
 }
 .categ-name-two h2,
@@ -3287,7 +3288,7 @@ select.reservation-fields {
 	
 }
 .viewdetbtn svg {
-	color:  rgb(249, 105, 14);
+	color:  rgb(255, 255, 255);
 	
 	/* padding-top: 5px; */
 	/* color: var(--headings-color); */
@@ -3296,8 +3297,8 @@ select.reservation-fields {
 }
 .viewdetbtn {
   
-    top: 40px;
-    right: 10px;
+    top: 30px;
+    right: 20px;
     position: fixed;
     background: #2f3640;
     color: white;
@@ -4679,3 +4680,4 @@ MEDIA QUERIES
 	}
 
 }
+

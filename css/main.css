@@ -69,7 +69,7 @@
     background-color: rgba(0, 0, 0, 0.466);
 } */
 .search-btn {
-  color: rgb(249, 105, 14);
+  color: rgb(255, 255, 255);
   float: right;
   width: 40px;
   height: 40px;
@@ -100,9 +100,9 @@
   text-transform: capitalize;
 }
 
-.search-box:hover>.search-btn {
+/* .search-box:hover>.search-btn {
   background-color: white;
-}
+} */
 
 /* Hide the checkbox but keep it accessible */
 .menu-checkbox {
