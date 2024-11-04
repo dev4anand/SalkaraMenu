@@ -249,9 +249,9 @@ document.getElementById('proceedBtn').addEventListener('click', () => {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${savedItem.name}</td>
-            <td>${savedItem.quantity}</td>
-            <td>${savedItem.price}</td>
-            <td>₹${(parseFloat(savedItem.price) * savedItem.quantity).toFixed(2)}</td>
+            <td style="text-align: center;">${savedItem.quantity}</td>
+            <td style="text-align: end;">₹${savedItem.price}</td>
+            <td style="text-align: end;">₹${(parseFloat(savedItem.price) * savedItem.quantity).toFixed(2)}</td>
         `;
         table.appendChild(row);
 
