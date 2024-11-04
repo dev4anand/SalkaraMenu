@@ -1487,11 +1487,11 @@ body.has-active-menu {
 
 .topSingleBkg {
 	width: 100%;
-	height: 450px;
+	height:  250px;
 	display: block;
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 72px;
+	margin-bottom: 30px;
 }
 
 .single-post-title {
@@ -4489,11 +4489,6 @@ MEDIA QUERIES
 	.parallax-content {
 		top: auto;
 		transform: none;
-	}
-
-
-	.topSingleBkg {
-		height: 250px;
 	}
 
 	.single-post-title {
