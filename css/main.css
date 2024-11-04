@@ -176,3 +176,13 @@
 .dim {
   color: gray;
 }
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content {
+  border-radius: 10px; /* Optional: Add some rounding for better design */
+}
