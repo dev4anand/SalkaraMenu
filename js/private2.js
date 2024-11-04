@@ -8,15 +8,17 @@ function loadSelectedItems() {
     savedItems.forEach(savedItem => {
         // Select the checkbox based on the name
         document.querySelectorAll('.checkbox-container').forEach(checkbox => {
+            let totalPrice = 0;
             if (checkbox.dataset.name === savedItem.name) {
                 checkbox.checked = true;
                 const container = checkbox.closest('.checkbox-container');
                 container.classList.add('checked');
-
+                 totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
+                document.getElementById('totalAmountWithLabel').textContent = ` Total:₹${totalPrice}`;
                 // Update the quantity display
                 const quantityCountDiv = container.querySelector('.quantitycountdiv');
                 if (quantityCountDiv) {
-                    quantityCountDiv.textContent = `Quantity: ${savedItem.quantity}`;
+                    quantityCountDiv.textContent = ` (${savedItem.quantity})`;
                 }
             }
         });
@@ -27,7 +29,7 @@ function loadSelectedItems() {
 
 document.querySelectorAll('.checkbox-container').forEach(container => {
     container.addEventListener('click', function (event) {
-        // Ignore click events if they occur on the increment button
+        // Ignore clicks on the increment or decrement buttons
         if (event.target.closest('.incrementbutton')) {
             return;
         }
@@ -36,38 +38,56 @@ document.querySelectorAll('.checkbox-container').forEach(container => {
         checkbox.checked = !checkbox.checked; // Toggle the checkbox
         container.classList.toggle('checked', checkbox.checked);
 
-        // Manage removal of increment div and uncheck if the same container was clicked
-        if (lastSelectedContainer === container) {
-            container.classList.remove('checked');
-            const incrementDiv = container.querySelector('.showincrementdiv');
-            if (incrementDiv) incrementDiv.remove();
-            lastSelectedContainer = null;
-            removeItemFromLocalStorage(container.dataset.name);
-            return;
+        // Check if the increment div already exists
+        const existingIncrementDiv = container.querySelector('.showincrementdiv');
+        if (existingIncrementDiv) {
+            existingIncrementDiv.remove();
         }
 
-        // Remove 'checked' class and increment divs from other containers
-        document.querySelectorAll('.checkbox-container.checked').forEach(activeContainer => {
-            if (activeContainer !== container) {
-                activeContainer.classList.remove('checked');
-                const incrementDiv = activeContainer.querySelector('.showincrementdiv');
-                if (incrementDiv) incrementDiv.remove();
+        // Load items from localStorage
+        let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+        const itemName = container.dataset.name;
+        const itemData = {
+            id: container.dataset.id,
+            name: itemName,
+            price: container.dataset.price,
+            quantity: 1
+        };
+        const quantityCountDiv = container.querySelector('.quantitycountdiv');
+
+        if (quantityCountDiv) {
+            quantityCountDiv.textContent = '';
+            // quantityCountDiv.remove();
+        }
+        // Check if item is in localStorage
+        const itemIndex = selectedItems.findIndex(item => item.name === itemName);
+
+        if (!checkbox.checked) {
+            // Remove item from localStorage if unchecked
+            if (itemIndex > -1) selectedItems.splice(itemIndex, 1);
+            container.classList.remove('checked');
+            localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+            const quantityCountDiv = container.querySelector('.quantitycountdiv');
+            if (quantityCountDiv) {
+                quantityCountDiv.textContent = '';
+                // quantityCountDiv.remove();
             }
-        });
+            return;
+        }
 
         // Create and append increment div
         const incrementDiv = document.createElement('div');
         incrementDiv.className = 'showincrementdiv';
-        incrementDiv.dataset.name = container.querySelector('.menu-checkbox').dataset.name;
+        incrementDiv.dataset.name = itemName;
         incrementDiv.innerHTML = `
             <div class="incrementbutton input">
-                <button data-price="${container.dataset.price}" data-id="${container.dataset.id}" class="buttonincr minus" aria-label="Decrease by one">
+                <button data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr minus" aria-label="Decrease by one">
                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="1" x2="16" y2="1" stroke="#0064FE" stroke-width="2" class="icon" />
                     </svg>
                 </button>
                 <div class="qntitynumber dim" id="qntynmb">1</div>
-                <button data-price="${container.dataset.price}" data-id="${container.dataset.id}" class="buttonincr plus" aria-label="Increase by one">
+                <button data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr plus" aria-label="Increase by one">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                         <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" stroke-width="2" />
                         <line y1="8" x2="16" y2="8" stroke="#0064FE" stroke-width="2" />
@@ -76,40 +96,113 @@ document.querySelectorAll('.checkbox-container').forEach(container => {
             </div>
         `;
 
-        // Load quantity from localStorage
-        const itemName = container.querySelector('.menu-checkbox').dataset.name;
-        let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
-        const item = selectedItems.find(item => item.name === itemName);
-        const quantity = item ? item.quantity : 1;
-        incrementDiv.querySelector('#qntynmb').textContent = quantity;
+        // Load quantity if the item exists in localStorage
+        if (itemIndex > -1) {
+            itemData.quantity = selectedItems[itemIndex].quantity;
+            incrementDiv.querySelector('#qntynmb').textContent = itemData.quantity;
+        }
 
         // Append the increment div to the container
         container.appendChild(incrementDiv);
 
         // Update localStorage
-        const itemData = {
-            id: container.dataset.id,
-            name: container.dataset.name,
-            price: container.dataset.price,
-            quantity: quantity
-        };
-
-        if (checkbox.checked) {
-            selectedItems = selectedItems.filter(item => item.name !== itemData.name);
-            selectedItems.push(itemData);
+        if (itemIndex > -1) {
+            selectedItems[itemIndex] = itemData;
         } else {
-            selectedItems = selectedItems.filter(item => item.name !== itemData.name);
+            selectedItems.push(itemData);
         }
-
         localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
-        const quantityCountDiv = container.querySelector('.quantitycountdiv');
-        // if (quantityCountDiv) {
-        //     quantityCountDiv.textContent = `Quantity: ${quantity}`;
-        // }
-        lastSelectedContainer = container;
-        // toggleProceedButton(); 
     });
 });
+
+
+// document.querySelectorAll('.checkbox-container').forEach(container => {
+//     container.addEventListener('click', function (event) {
+//         // Ignore click events if they occur on the increment button
+//         if (event.target.closest('.incrementbutton')) {
+//             return;
+//         }
+// // alert('button clicked ');
+//         const checkbox = container.querySelector('.menu-checkbox');
+//         checkbox.checked = !checkbox.checked; // Toggle the checkbox
+//         container.classList.toggle('checked', checkbox.checked);
+//         const existingIncrementDiv = container.querySelector('.showincrementdiv');
+//         if (existingIncrementDiv) {
+//             existingIncrementDiv.remove();
+//         }
+
+//         // Manage removal of increment div and uncheck if the same container was clicked
+//         if () {
+//             container.classList.remove('checked');
+//             const incrementDiv = container.querySelector('.showincrementdiv');
+//             if (incrementDiv) incrementDiv.remove();
+//             removeItemFromLocalStorage(container.dataset.name);
+//             return;
+//         }
+
+//         // Remove 'checked' class and increment divs from other containers
+//         // document.querySelectorAll('.checkbox-container.checked').forEach(activeContainer => {
+//         //     if (activeContainer !== container) {
+//         //         activeContainer.classList.remove('checked');
+//         //         const incrementDiv = activeContainer.querySelector('.showincrementdiv');
+//         //         if (incrementDiv) incrementDiv.remove();
+//         //     }
+//         // });
+
+//         // Create and append increment div
+//         const incrementDiv = document.createElement('div');
+//         incrementDiv.className = 'showincrementdiv';
+//         incrementDiv.dataset.name = container.querySelector('.menu-checkbox').dataset.name;
+//         incrementDiv.innerHTML = `
+//             <div class="incrementbutton input">
+//                 <button data-price="${container.dataset.price}" data-id="${container.dataset.id}" class="buttonincr minus" aria-label="Decrease by one">
+//                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+//                         <line y1="1" x2="16" y2="1" stroke="#0064FE" stroke-width="2" class="icon" />
+//                     </svg>
+//                 </button>
+//                 <div class="qntitynumber dim" id="qntynmb">1</div>
+//                 <button data-price="${container.dataset.price}" data-id="${container.dataset.id}" class="buttonincr plus" aria-label="Increase by one">
+//                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+//                         <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" stroke-width="2" />
+//                         <line y1="8" x2="16" y2="8" stroke="#0064FE" stroke-width="2" />
+//                     </svg>
+//                 </button>
+//             </div>
+//         `;
+
+//         // Load quantity from localStorage
+//         const itemName = container.querySelector('.menu-checkbox').dataset.name;
+//         let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+//         const item = selectedItems.find(item => item.name === itemName);
+//         const quantity = item ? item.quantity : 1;
+//         incrementDiv.querySelector('#qntynmb').textContent = quantity;
+
+//         // Append the increment div to the container
+//         container.appendChild(incrementDiv);
+
+//         // Update localStorage
+//         const itemData = {
+//             id: container.dataset.id,
+//             name: container.dataset.name,
+//             price: container.dataset.price,
+//             quantity: quantity
+//         };
+
+//         if (checkbox.checked) {
+//             selectedItems = selectedItems.filter(item => item.name !== itemData.name);
+//             selectedItems.push(itemData);
+//         } else {
+//             selectedItems = selectedItems.filter(item => item.name !== itemData.name);
+//         }
+
+//         localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+//         const quantityCountDiv = container.querySelector('.quantitycountdiv');
+//         // if (quantityCountDiv) {
+//         //     quantityCountDiv.textContent = `Quantity: ${quantity}`;
+//         // }
+//         // toggleProceedButton(); 
+//     });
+// });
 
 // Helper function to remove item from localStorage
 function removeItemFromLocalStorage(itemName) {
@@ -157,10 +250,10 @@ document.addEventListener('click', function (event) {
 
             // Save the updated items to localStorage
             localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
-            const quantityCountDiv = container.querySelector('.quantitycountdiv');
-            if (quantityCountDiv) {
-                quantityCountDiv.textContent = ` (${currentQuantity})`;
-            }
+            // const quantityCountDiv = container.querySelector('.quantitycountdiv');
+            // if (quantityCountDiv) {
+            //     quantityCountDiv.textContent = ` (${currentQuantity})`;
+            // }
         }
     }
 

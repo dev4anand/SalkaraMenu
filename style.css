@@ -1795,7 +1795,7 @@ body.has-active-menu {
 
 .categ-name-two {
 	text-align: center;
-	margin-bottom: 54px;
+	/* margin-bottom: 54px; */
 }
 .categ-name-two h2,
 .headline h2 {
