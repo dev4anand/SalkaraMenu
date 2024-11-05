@@ -1,1 +1,316 @@
-const _0x4fe6f8=_0x3b90;(function(_0x465d7a,_0x47375b){const _0x4a90eb=_0x3b90,_0x4b06d3=_0x465d7a();while(!![]){try{const _0x25685c=parseInt(_0x4a90eb(0xb7))/(0x1*-0x24d9+0x258f*-0x1+0x1*0x4a69)*(-parseInt(_0x4a90eb(0x117))/(0x30*0x2e+-0x11c1+0x923))+-parseInt(_0x4a90eb(0x16b))/(0x3*-0x8a+0xb78+-0x9d7)+parseInt(_0x4a90eb(0xcc))/(0xe28+-0xe39+-0x7*-0x3)+parseInt(_0x4a90eb(0x13d))/(-0xd*0x2a1+0x7e2*-0x3+0x39d8*0x1)+parseInt(_0x4a90eb(0x105))/(-0xba2*-0x3+-0x215a+-0x186)*(parseInt(_0x4a90eb(0x10b))/(-0x1e6*-0x7+-0x1296+0x553*0x1))+-parseInt(_0x4a90eb(0x187))/(0xc5b+0xd58+-0x1*0x19ab)*(-parseInt(_0x4a90eb(0x16f))/(0x551+0x7bf+0x91*-0x17))+-parseInt(_0x4a90eb(0x128))/(0x12b+-0x7*-0x2fc+0x757*-0x3);if(_0x25685c===_0x47375b)break;else _0x4b06d3['push'](_0x4b06d3['shift']());}catch(_0x4d2000){_0x4b06d3['push'](_0x4b06d3['shift']());}}}(_0x8a6d,-0x2c755+0xdb6f2+-0x3143a));let lastSelectedContainer=null;window[_0x4fe6f8(0x1ac)+_0x4fe6f8(0x18e)](_0x4fe6f8(0x150)+_0x4fe6f8(0x192),loadSelectedItems);function _0x3b90(_0xc10223,_0x3523f0){const _0x4978db=_0x8a6d();return _0x3b90=function(_0x4efaec,_0x3fe916){_0x4efaec=_0x4efaec-(-0x7df+-0x1*0x14b6+0x1d47);let _0xd547bd=_0x4978db[_0x4efaec];return _0xd547bd;},_0x3b90(_0xc10223,_0x3523f0);}function loadSelectedItems(){const _0x2f2326=_0x4fe6f8,_0x4abbcd={'pivox':function(_0x4e308b,_0x240e27){return _0x4e308b===_0x240e27;},'bUWHq':_0x2f2326(0x116)+_0x2f2326(0xf0),'uSYWz':_0x2f2326(0x19a),'EMeVR':function(_0x5a6b7a,_0x3c487b){return _0x5a6b7a*_0x3c487b;},'biwLC':function(_0x1648b6,_0x4e4874){return _0x1648b6(_0x4e4874);},'FOIeP':_0x2f2326(0x144)+_0x2f2326(0x17c),'XpJBq':_0x2f2326(0x15a)+_0x2f2326(0x12f),'rWfcd':function(_0x2c7e66,_0x3711e1){return _0x2c7e66!=_0x3711e1;},'vIGdb':_0x2f2326(0x1ae)+_0x2f2326(0xf7)},_0x15309a=JSON[_0x2f2326(0x19d)](localStorage[_0x2f2326(0x135)](_0x4abbcd[_0x2f2326(0x162)]))||[];let _0x1d5b43=0x221b+-0x5*0x6ee+0x8b;_0x15309a[_0x2f2326(0x1b6)](_0x41029b=>{const _0x6bc29f=_0x2f2326,_0x45720e={'nyXhA':function(_0x590c4c,_0x1bd81b){const _0x4ee6a8=_0x3b90;return _0x4abbcd[_0x4ee6a8(0xed)](_0x590c4c,_0x1bd81b);},'KIQec':_0x4abbcd[_0x6bc29f(0xfe)],'QCCsb':_0x4abbcd[_0x6bc29f(0x15d)],'XOSil':function(_0x15b1ed,_0xe989b2){const _0x243574=_0x6bc29f;return _0x4abbcd[_0x243574(0x124)](_0x15b1ed,_0xe989b2);},'nEiHY':function(_0x3b8134,_0x153352){const _0x51e5e8=_0x6bc29f;return _0x4abbcd[_0x51e5e8(0x142)](_0x3b8134,_0x153352);},'RmbRH':_0x4abbcd[_0x6bc29f(0x154)]};document[_0x6bc29f(0x17e)+_0x6bc29f(0xe3)](_0x4abbcd[_0x6bc29f(0xfe)])[_0x6bc29f(0x1b6)](_0x442cbd=>{const _0x4be090=_0x6bc29f;if(_0x45720e[_0x4be090(0xd1)](_0x442cbd[_0x4be090(0xc9)][_0x4be090(0x1b1)],_0x41029b[_0x4be090(0x1b1)])){_0x442cbd[_0x4be090(0x19a)]=!![];const _0x48d77e=_0x442cbd[_0x4be090(0x11c)](_0x45720e[_0x4be090(0xbc)]);_0x48d77e[_0x4be090(0x12e)][_0x4be090(0xfa)](_0x45720e[_0x4be090(0x12c)]),_0x1d5b43+=_0x45720e[_0x4be090(0x166)](_0x45720e[_0x4be090(0x190)](parseFloat,_0x41029b[_0x4be090(0x108)]),_0x41029b[_0x4be090(0xeb)]);const _0x119e53=_0x48d77e[_0x4be090(0x17e)+_0x4be090(0x167)](_0x45720e[_0x4be090(0x126)]);_0x119e53&&(_0x119e53[_0x4be090(0x15f)+'t']='\x20('+_0x41029b[_0x4be090(0xeb)]+')');}});}),_0x4abbcd[_0x2f2326(0xf2)](_0x1d5b43,0x1d2d+-0x2*0x177+-0x1a3f)&&(document[_0x2f2326(0x120)+_0x2f2326(0xff)](_0x4abbcd[_0x2f2326(0x11a)])[_0x2f2326(0x15f)+'t']=_0x2f2326(0x129)+_0x1d5b43);}function _0x8a6d(){const _0x3791ef=['nmb\x22>1</di','\x20\x20\x20\x20\x20</div','proceedBtn','crease\x20by\x20','\x20\x20\x20\x20\x20\x20</bu','stringify','dataset','\x20\x20\x20\x20\x20\x20\x20\x20<t','bvfMP','3354020vCuXiI','.menu-post','₹)</th>\x0a\x20\x20','splice','iPXAD','nyXhA','2000/svg\x22>','HDjmP','riPcm','mentdiv','\x22\x20class=\x22b','=\x22http://w','s=\x22http://','a-label=\x22D','stroke-wid','16\x22\x20fill=\x22','\x20\x20\x20\x20\x20\x20<th>','\x22\x20data-id=','iwiOP','findIndex','click','ice=\x22','uttonincr\x20','torAll','g\x20width=\x221','scrollInto','Quantity</','Iuoun','none\x22\x20xmln','\x20\x20<th>Pric','RoQYD','quantity','kbox','pivox','\x22\x20id=\x22qnty','/>\x0a\x20\x20\x20\x20\x20\x20\x20','container','Enter','rWfcd','\x20\x20\x20\x20\x20<line','16\x22\x20stroke','\x20width=\x2216','DzrAp','tWithLabel','key','on\x20data-pr','add','AOkTB','appendChil','GvORV','bUWHq','ById','selectedIt','th=\x222\x22\x20/>\x0a','sSgmW','#qntynmb','trim','672BvAZDq','v>\x0a\x20\x20\x20\x20\x20\x20\x20','d\x20style=\x22t','price','ext-align:','one\x22>\x0a\x20\x20\x20\x20','31633NzjUxU','=\x2216\x22\x20y2=\x22','-desc,\x20.ma','xJMoI','div','keydown','entdiv','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<','\x20class=\x22ic','IHapk','button','.checkbox-','28030wpMeCZ','iycen','RDXYV','vIGdb','ryhWp','closest','\x20stroke-wi','line\x20x1=\x228','th>\x0a\x20\x20\x20\x20\x20\x20','getElement','createElem','th>Item\x20Na','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20','EMeVR','2=\x228\x22\x20y2=\x22','RmbRH','IBNVQ','12452750gEROso','\x20Total:₹','number\x20dim','mentbutton','QCCsb','www.w3.org','classList','hura','center','aooNg','clear','ault','8\x22\x20stroke=','getItem','zqFLV','setItem','eqUsZ','YnwTN','remove','16\x22\x20viewBo','showincrem','3890865ZsFcYF','ered','BdXoa','>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','\x20y1=\x221\x22\x20x2','biwLC','on\x22>\x0a\x20\x20\x20\x20\x20','.quantityc','push','\x20\x20\x20\x20\x20\x20\x20<sv','table','layalam','Appbb','bGILc','/2000/svg\x22','container.','ss=\x22qntity','.increment','RKjXW','DOMContent','reload','</svg>\x0a\x20\x20\x20','ww.w3.org/','FOIeP','value','TLnsv','\x22\x20height=\x22','th=\x222\x22\x20cla','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','salkaravit','\x20end;\x22>₹','rAUxk','uSYWz','\x20\x20\x20\x20\x20<butt','textConten','mWcKm','plus\x22\x20aria','XpJBq','toggle','ass=\x22incre','IgfJl','XOSil','tor','\x20\x20\x20</butto','-label=\x22In','filter','245298fxtmtB','\x222\x22\x20viewBo','eNNAT','oBbFG','6427935beaAwN','.menu-chec','dth=\x222\x22\x20/>','tton>\x0a\x20\x20\x20\x20','phcHC','KRsuI','className','gZIkW','DXXVg','FDDVM','\x20\x20\x20<td>','length','\x20\x20\x20\x20\x20\x20<svg','ountdiv','=\x22#0064FE\x22','querySelec','toLowerCas','ent','r.plus','one\x22\x20xmlns','x=\x220\x200\x2016\x20','d-none','e\x20(₹)</th>','xgZeK','8hnZhxL','OdgBU','UyjUC','table-bord','\x20\x20\x20\x20\x20\x20\x20\x20\x20<','preventDef','.total-sec','stener','innerHTML','nEiHY','.showincre','Loaded','.buttoninc','\x20\x20\x20</svg>\x0a','a-price=\x22','\x22\x20y1=\x220\x22\x20x','tNyPT','\x20\x20\x20\x20','dcmtP','checked','\x20y1=\x228\x22\x20x2','View','parse','emsList','1\x22\x20stroke=','No\x20Item\x20fo','includes','tion','target','bdVjk','JvOGU','toFixed','MCajZ','\x20one\x22>\x0a\x20\x20\x20','minus\x22\x20ari','2\x22\x20fill=\x22n','und\x20!','addEventLi','button\x20dat','totalAmoun','smooth','\x20input\x22>\x0a\x20','name','finalAmoun','\x22#0064FE\x22\x20','gySVU','6\x22\x20height=','forEach','pKSux','wZeDE','\x20center;\x22>','cKpoM','</td>\x0a\x20\x20\x20\x20','ecrease\x20by','71tgvKJx','\x20\x20\x20<div\x20cl','\x20\x20<div\x20cla','NiwnO','th>Total\x20(','KIQec','r.minus','me</th>\x0a\x20\x20','search-inp','SGpSI','n>\x0a\x20\x20\x20\x20\x20\x20\x20','ss=\x22icon\x22\x20'];_0x8a6d=function(){return _0x3791ef;};return _0x8a6d();}document[_0x4fe6f8(0x17e)+_0x4fe6f8(0xe3)](_0x4fe6f8(0x116)+_0x4fe6f8(0xf0))[_0x4fe6f8(0x1b6)](_0x4ce89f=>{const _0x5ab504=_0x4fe6f8,_0x418a2e={'sSgmW':_0x5ab504(0x14e)+_0x5ab504(0x115),'YnwTN':_0x5ab504(0x170)+_0x5ab504(0xec),'RoQYD':_0x5ab504(0x19a),'Appbb':_0x5ab504(0x191)+_0x5ab504(0xd5),'SGpSI':_0x5ab504(0x15a)+_0x5ab504(0x12f),'MCajZ':_0x5ab504(0x144)+_0x5ab504(0x17c),'pKSux':function(_0x2b5653,_0x53b4c8){return _0x2b5653>_0x53b4c8;},'iwiOP':_0x5ab504(0x10f),'DXXVg':_0x5ab504(0x13c)+_0x5ab504(0x111),'bGILc':function(_0x1f0a55,_0x153e69){return _0x1f0a55>_0x153e69;},'riPcm':_0x5ab504(0x103),'bdVjk':_0x5ab504(0xe0)};_0x4ce89f[_0x5ab504(0x1ac)+_0x5ab504(0x18e)](_0x418a2e[_0x5ab504(0x1a4)],function(_0x390047){const _0x4946b8=_0x5ab504;if(_0x390047[_0x4946b8(0x1a3)][_0x4946b8(0x11c)](_0x418a2e[_0x4946b8(0x102)]))return;const _0x5474e1=_0x4ce89f[_0x4946b8(0x17e)+_0x4946b8(0x167)](_0x418a2e[_0x4946b8(0x139)]);_0x5474e1[_0x4946b8(0x19a)]=!_0x5474e1[_0x4946b8(0x19a)],_0x4ce89f[_0x4946b8(0x12e)][_0x4946b8(0x163)](_0x418a2e[_0x4946b8(0xea)],_0x5474e1[_0x4946b8(0x19a)]);const _0x1a4b09=_0x4ce89f[_0x4946b8(0x17e)+_0x4946b8(0x167)](_0x418a2e[_0x4946b8(0x149)]);_0x1a4b09&&_0x1a4b09[_0x4946b8(0x13a)]();let _0x20dfda=JSON[_0x4946b8(0x19d)](localStorage[_0x4946b8(0x135)](_0x418a2e[_0x4946b8(0xc0)]))||[];const _0x19e520=_0x4ce89f[_0x4946b8(0xc9)][_0x4946b8(0x1b1)],_0x3cc5d4={'id':_0x4ce89f[_0x4946b8(0xc9)]['id'],'name':_0x19e520,'price':_0x4ce89f[_0x4946b8(0xc9)][_0x4946b8(0x108)],'quantity':0x1},_0x43561c=_0x4ce89f[_0x4946b8(0x17e)+_0x4946b8(0x167)](_0x418a2e[_0x4946b8(0x1a7)]);_0x43561c&&(_0x43561c[_0x4946b8(0x15f)+'t']='');const _0x297183=_0x20dfda[_0x4946b8(0xdf)](_0x1e7433=>_0x1e7433[_0x4946b8(0x1b1)]===_0x19e520);if(!_0x5474e1[_0x4946b8(0x19a)]){if(_0x418a2e[_0x4946b8(0x1b7)](_0x297183,-(0x252d*0x1+-0x262f+0x103)))_0x20dfda[_0x4946b8(0xcf)](_0x297183,-0xc85+-0x1*0x2056+0x2cdc);_0x4ce89f[_0x4946b8(0x12e)][_0x4946b8(0x13a)](_0x418a2e[_0x4946b8(0xea)]),localStorage[_0x4946b8(0x137)](_0x418a2e[_0x4946b8(0xc0)],JSON[_0x4946b8(0xc8)](_0x20dfda));return;}const _0x19c188=document[_0x4946b8(0x121)+_0x4946b8(0x180)](_0x418a2e[_0x4946b8(0xde)]);_0x19c188[_0x4946b8(0x175)]=_0x418a2e[_0x4946b8(0x177)],_0x19c188[_0x4946b8(0xc9)][_0x4946b8(0x1b1)]=_0x19e520,_0x19c188[_0x4946b8(0x18f)]=_0x4946b8(0x123)+_0x4946b8(0xb8)+_0x4946b8(0x164)+_0x4946b8(0x12b)+_0x4946b8(0x1b0)+_0x4946b8(0x159)+_0x4946b8(0x15e)+_0x4946b8(0xf9)+_0x4946b8(0xe1)+_0x3cc5d4[_0x4946b8(0x108)]+(_0x4946b8(0xdd)+'\x22')+_0x3cc5d4['id']+(_0x4946b8(0xd6)+_0x4946b8(0xe2)+_0x4946b8(0x1a9)+_0x4946b8(0xd9)+_0x4946b8(0xb6)+_0x4946b8(0x1a8)+_0x4946b8(0x159)+_0x4946b8(0x146)+_0x4946b8(0xe4)+_0x4946b8(0x1b5)+_0x4946b8(0x16c)+_0x4946b8(0x183)+_0x4946b8(0x1aa)+_0x4946b8(0x182)+_0x4946b8(0xd7)+_0x4946b8(0x153)+_0x4946b8(0xd2)+_0x4946b8(0x123)+_0x4946b8(0x159)+_0x4946b8(0xf3)+_0x4946b8(0x141)+_0x4946b8(0x10c)+_0x4946b8(0x19f)+_0x4946b8(0x1b3)+_0x4946b8(0xda)+_0x4946b8(0x158)+_0x4946b8(0xc2)+_0x4946b8(0xef)+_0x4946b8(0x159)+_0x4946b8(0x194)+_0x4946b8(0x159)+_0x4946b8(0xc7)+_0x4946b8(0x172)+_0x4946b8(0x159)+_0x4946b8(0xb9)+_0x4946b8(0x14d)+_0x4946b8(0x12a)+_0x4946b8(0xee)+_0x4946b8(0xc3)+_0x4946b8(0x106)+_0x4946b8(0x18b)+_0x4946b8(0x1ad)+_0x4946b8(0x195))+_0x3cc5d4[_0x4946b8(0x108)]+(_0x4946b8(0xdd)+'\x22')+_0x3cc5d4['id']+(_0x4946b8(0xd6)+_0x4946b8(0xe2)+_0x4946b8(0x161)+_0x4946b8(0x169)+_0x4946b8(0xc6)+_0x4946b8(0x10a)+_0x4946b8(0x159)+_0x4946b8(0x17b)+_0x4946b8(0xf5)+_0x4946b8(0x157)+_0x4946b8(0x13b)+_0x4946b8(0x183)+_0x4946b8(0xdb)+_0x4946b8(0xe8)+_0x4946b8(0xd8)+_0x4946b8(0x12d)+_0x4946b8(0x14b)+_0x4946b8(0x113)+_0x4946b8(0x143)+_0x4946b8(0x159)+_0x4946b8(0x18b)+_0x4946b8(0x11e)+_0x4946b8(0x196)+_0x4946b8(0x125)+_0x4946b8(0xf4)+_0x4946b8(0x17d)+_0x4946b8(0x11d)+_0x4946b8(0x171)+_0x4946b8(0x123)+_0x4946b8(0x159)+_0x4946b8(0xf3)+_0x4946b8(0x19b)+_0x4946b8(0x10c)+_0x4946b8(0x134)+_0x4946b8(0x1b3)+_0x4946b8(0xda)+_0x4946b8(0x101)+_0x4946b8(0x159)+_0x4946b8(0x159)+_0x4946b8(0x152)+_0x4946b8(0x159)+_0x4946b8(0x168)+_0x4946b8(0xc1)+_0x4946b8(0xc4)+_0x4946b8(0x140)),_0x418a2e[_0x4946b8(0x14a)](_0x297183,-(-0x689+0x3*0x9ae+-0x1680))&&(_0x3cc5d4[_0x4946b8(0xeb)]=_0x20dfda[_0x297183][_0x4946b8(0xeb)],_0x19c188[_0x4946b8(0x17e)+_0x4946b8(0x167)](_0x418a2e[_0x4946b8(0xd4)])[_0x4946b8(0x15f)+'t']=_0x3cc5d4[_0x4946b8(0xeb)]),_0x4ce89f[_0x4946b8(0xfc)+'d'](_0x19c188),_0x418a2e[_0x4946b8(0x1b7)](_0x297183,-(0x2e*-0x45+0x4d8+0x78f))?_0x20dfda[_0x297183]=_0x3cc5d4:_0x20dfda[_0x4946b8(0x145)](_0x3cc5d4),localStorage[_0x4946b8(0x137)](_0x418a2e[_0x4946b8(0xc0)],JSON[_0x4946b8(0xc8)](_0x20dfda));});});function removeItemFromLocalStorage(_0x1dd2f4){const _0x14d02d=_0x4fe6f8,_0xeb0d03={'mWcKm':_0x14d02d(0x15a)+_0x14d02d(0x12f)};let _0x1ffca1=JSON[_0x14d02d(0x19d)](localStorage[_0x14d02d(0x135)](_0xeb0d03[_0x14d02d(0x160)]))||[];_0x1ffca1=_0x1ffca1[_0x14d02d(0x16a)](_0x2cc047=>_0x2cc047[_0x14d02d(0x1b1)]!==_0x1dd2f4),localStorage[_0x14d02d(0x137)](_0xeb0d03[_0x14d02d(0x160)],JSON[_0x14d02d(0xc8)](_0x1ffca1));}document[_0x4fe6f8(0x1ac)+_0x4fe6f8(0x18e)](_0x4fe6f8(0xe0),function(_0x488d6f){const _0x473a7d=_0x4fe6f8,_0x853038={'DzrAp':_0x473a7d(0x193)+_0x473a7d(0x181),'phcHC':_0x473a7d(0x116)+_0x473a7d(0xf0),'aooNg':_0x473a7d(0x170)+_0x473a7d(0xec),'FDDVM':_0x473a7d(0x103),'cKpoM':function(_0x172fc3,_0x5a41c4,_0x1c8fbb){return _0x172fc3(_0x5a41c4,_0x1c8fbb);},'RDXYV':_0x473a7d(0x15a)+_0x473a7d(0x12f),'RKjXW':function(_0x1fb089,_0x361b7d){return _0x1fb089!==_0x361b7d;},'xJMoI':_0x473a7d(0x193)+_0x473a7d(0xbd),'iycen':function(_0x59c6b3,_0x966e5,_0x39f5bb){return _0x59c6b3(_0x966e5,_0x39f5bb);},'eNNAT':function(_0x5081a1,_0x16ec85){return _0x5081a1>_0x16ec85;},'Iuoun':function(_0x3a5de7,_0x370e48){return _0x3a5de7!==_0x370e48;},'wZeDE':_0x473a7d(0x144)+_0x473a7d(0x17c),'HDjmP':function(_0x5b6da0){return _0x5b6da0();}};if(_0x488d6f[_0x473a7d(0x1a3)][_0x473a7d(0x11c)](_0x853038[_0x473a7d(0xf6)])){_0x488d6f[_0x473a7d(0x18c)+_0x473a7d(0x133)]();const _0x19749a=_0x488d6f[_0x473a7d(0x1a3)][_0x473a7d(0x11c)](_0x853038[_0x473a7d(0xf6)]),_0x3c7b62=_0x19749a[_0x473a7d(0x11c)](_0x853038[_0x473a7d(0x173)]);if(_0x3c7b62){const _0x26b6f9=_0x3c7b62[_0x473a7d(0x17e)+_0x473a7d(0x167)](_0x853038[_0x473a7d(0x131)])[_0x473a7d(0xc9)][_0x473a7d(0x1b1)],_0x11f619=_0x3c7b62[_0x473a7d(0xc9)]['id'],_0xa1b3ac=_0x3c7b62[_0x473a7d(0x17e)+_0x473a7d(0x167)](_0x853038[_0x473a7d(0x178)]);let _0xb29602=_0x853038[_0x473a7d(0xb4)](parseInt,_0xa1b3ac[_0x473a7d(0x15f)+'t'],-0x261e+0x7*0x2d1+0x1271)||0x1632+0xf76+-0x33*0xbd;_0xb29602+=-0x70d*-0x1+0x5b6*-0x2+0x460,_0xa1b3ac[_0x473a7d(0x15f)+'t']=_0xb29602;let _0x4b2cb5=JSON[_0x473a7d(0x19d)](localStorage[_0x473a7d(0x135)](_0x853038[_0x473a7d(0x119)]))||[];const _0x41471b=_0x4b2cb5[_0x473a7d(0xdf)](_0x3ef5b5=>_0x3ef5b5['id']===_0x11f619);_0x853038[_0x473a7d(0x14f)](_0x41471b,-(0x1*0x5ad+0xdbd*0x2+-0x2126))?_0x4b2cb5[_0x41471b][_0x473a7d(0xeb)]=_0xb29602:_0x4b2cb5[_0x473a7d(0x145)]({'id':_0x11f619,'name':_0x26b6f9,'price':_0x3c7b62[_0x473a7d(0x17e)+_0x473a7d(0x167)](_0x853038[_0x473a7d(0x131)])[_0x473a7d(0xc9)][_0x473a7d(0x108)],'quantity':_0xb29602}),localStorage[_0x473a7d(0x137)](_0x853038[_0x473a7d(0x119)],JSON[_0x473a7d(0xc8)](_0x4b2cb5));}}if(_0x488d6f[_0x473a7d(0x1a3)][_0x473a7d(0x11c)](_0x853038[_0x473a7d(0x10e)])){_0x488d6f[_0x473a7d(0x18c)+_0x473a7d(0x133)]();const _0x20c2ce=_0x488d6f[_0x473a7d(0x1a3)][_0x473a7d(0x11c)](_0x853038[_0x473a7d(0x10e)]),_0x4d3ab2=_0x20c2ce[_0x473a7d(0x11c)](_0x853038[_0x473a7d(0x173)]);if(_0x4d3ab2){const _0x277c12=_0x4d3ab2[_0x473a7d(0x17e)+_0x473a7d(0x167)](_0x853038[_0x473a7d(0x131)])[_0x473a7d(0xc9)][_0x473a7d(0x1b1)],_0x58cc86=_0x4d3ab2[_0x473a7d(0xc9)]['id'],_0x407e99=_0x4d3ab2[_0x473a7d(0x17e)+_0x473a7d(0x167)](_0x853038[_0x473a7d(0x178)]);let _0x2c599f=_0x853038[_0x473a7d(0x118)](parseInt,_0x407e99[_0x473a7d(0x15f)+'t'],0x233*0xd+0x13*-0xe5+-0xb8e)||0x637*0x3+0x1607+-0x28ab;if(_0x853038[_0x473a7d(0x16d)](_0x2c599f,-0x25b*0xa+-0x66b+-0x6*-0x4ff)){_0x2c599f-=0x5c*-0x5b+0x22d5*-0x1+0x438a,_0x407e99[_0x473a7d(0x15f)+'t']=_0x2c599f;let _0x40cc8a=JSON[_0x473a7d(0x19d)](localStorage[_0x473a7d(0x135)](_0x853038[_0x473a7d(0x119)]))||[];const _0x5a6d9e=_0x40cc8a[_0x473a7d(0xdf)](_0x5bc9fd=>_0x5bc9fd['id']===_0x58cc86);if(_0x853038[_0x473a7d(0xe7)](_0x5a6d9e,-(0x27*0xbf+-0x8*0xe9+-0x15d0*0x1))){_0x40cc8a[_0x5a6d9e][_0x473a7d(0xeb)]=_0x2c599f,localStorage[_0x473a7d(0x137)](_0x853038[_0x473a7d(0x119)],JSON[_0x473a7d(0xc8)](_0x40cc8a));const _0x106fb3=_0x4d3ab2[_0x473a7d(0x17e)+_0x473a7d(0x167)](_0x853038[_0x473a7d(0xb2)]);_0x106fb3&&(_0x106fb3[_0x473a7d(0x15f)+'t']='\x20('+_0x2c599f+')');}}}}_0x853038[_0x473a7d(0xd3)](updateTotalPrice);});function updateTotalPrice(){const _0x22c0ac=_0x4fe6f8,_0x1f02a6={'rAUxk':function(_0x46570f,_0x3d4542){return _0x46570f*_0x3d4542;},'eqUsZ':function(_0x373337,_0x2d01d4){return _0x373337(_0x2d01d4);},'GvORV':_0x22c0ac(0x15a)+_0x22c0ac(0x12f),'IBNVQ':_0x22c0ac(0x1ae)+_0x22c0ac(0xf7)},_0x2de496=JSON[_0x22c0ac(0x19d)](localStorage[_0x22c0ac(0x135)](_0x1f02a6[_0x22c0ac(0xfd)]))||[];let _0xc1ef09=-0x6db+-0x26a2+0x2ad*0x11;_0x2de496[_0x22c0ac(0x1b6)](_0x4a20a4=>{const _0x2f3920=_0x22c0ac;_0xc1ef09+=_0x1f02a6[_0x2f3920(0x15c)](_0x1f02a6[_0x2f3920(0x138)](parseFloat,_0x4a20a4[_0x2f3920(0x108)]),_0x4a20a4[_0x2f3920(0xeb)]);}),document[_0x22c0ac(0x120)+_0x22c0ac(0xff)](_0x1f02a6[_0x22c0ac(0x127)])[_0x22c0ac(0x15f)+'t']=_0x22c0ac(0x129)+_0xc1ef09;}document[_0x4fe6f8(0x120)+_0x4fe6f8(0xff)](_0x4fe6f8(0xc5))[_0x4fe6f8(0x1ac)+_0x4fe6f8(0x18e)](_0x4fe6f8(0xe0),()=>{const _0x509c1e=_0x4fe6f8,_0x3093ac={'IHapk':function(_0x102300,_0x159371){return _0x102300*_0x159371;},'xgZeK':function(_0x2f43d1,_0x68f378){return _0x2f43d1(_0x68f378);},'dcmtP':_0x509c1e(0x15a)+_0x509c1e(0x12f),'UyjUC':_0x509c1e(0x100)+_0x509c1e(0x19e),'OdgBU':_0x509c1e(0x147),'gZIkW':_0x509c1e(0x18a)+_0x509c1e(0x13e),'iPXAD':_0x509c1e(0x1b2)+'t'},_0x9ba18a=JSON[_0x509c1e(0x19d)](localStorage[_0x509c1e(0x135)](_0x3093ac[_0x509c1e(0x199)]))||[],_0x1562f7=document[_0x509c1e(0x120)+_0x509c1e(0xff)](_0x3093ac[_0x509c1e(0x189)]);_0x1562f7[_0x509c1e(0x18f)]='';const _0x5c37b4=document[_0x509c1e(0x121)+_0x509c1e(0x180)](_0x3093ac[_0x509c1e(0x188)]);_0x5c37b4[_0x509c1e(0x12e)][_0x509c1e(0xfa)](_0x3093ac[_0x509c1e(0x188)],_0x3093ac[_0x509c1e(0x176)]);const _0x48245a=document[_0x509c1e(0x121)+_0x509c1e(0x180)]('tr');_0x48245a[_0x509c1e(0x18f)]=_0x509c1e(0x112)+_0x509c1e(0x122)+_0x509c1e(0xbe)+_0x509c1e(0xdc)+_0x509c1e(0xe6)+_0x509c1e(0x11f)+_0x509c1e(0xe9)+_0x509c1e(0x185)+_0x509c1e(0x112)+_0x509c1e(0xbb)+_0x509c1e(0xce)+'\x20\x20',_0x5c37b4[_0x509c1e(0xfc)+'d'](_0x48245a);let _0x36aa6a=-0x217*0x3+-0x980+0xfc5;_0x9ba18a[_0x509c1e(0x1b6)](_0x1e3423=>{const _0x4d9c0c=_0x509c1e,_0x2109bd=document[_0x4d9c0c(0x121)+_0x4d9c0c(0x180)]('tr');_0x2109bd[_0x4d9c0c(0x18f)]=_0x4d9c0c(0x123)+_0x4d9c0c(0x179)+_0x1e3423[_0x4d9c0c(0x1b1)]+(_0x4d9c0c(0xb5)+_0x4d9c0c(0xca)+_0x4d9c0c(0x107)+_0x4d9c0c(0x109)+_0x4d9c0c(0xb3))+_0x1e3423[_0x4d9c0c(0xeb)]+(_0x4d9c0c(0xb5)+_0x4d9c0c(0xca)+_0x4d9c0c(0x107)+_0x4d9c0c(0x109)+_0x4d9c0c(0x15b))+_0x1e3423[_0x4d9c0c(0x108)]+(_0x4d9c0c(0xb5)+_0x4d9c0c(0xca)+_0x4d9c0c(0x107)+_0x4d9c0c(0x109)+_0x4d9c0c(0x15b))+_0x3093ac[_0x4d9c0c(0x114)](_0x3093ac[_0x4d9c0c(0x186)](parseFloat,_0x1e3423[_0x4d9c0c(0x108)]),_0x1e3423[_0x4d9c0c(0xeb)])[_0x4d9c0c(0x1a6)](-0x1*-0x15b3+0x2f0*0x8+0x2d31*-0x1)+(_0x4d9c0c(0xb5)+_0x4d9c0c(0x198)),_0x5c37b4[_0x4d9c0c(0xfc)+'d'](_0x2109bd),_0x36aa6a+=_0x3093ac[_0x4d9c0c(0x114)](_0x3093ac[_0x4d9c0c(0x186)](parseFloat,_0x1e3423[_0x4d9c0c(0x108)]),_0x1e3423[_0x4d9c0c(0xeb)]);}),_0x1562f7[_0x509c1e(0xfc)+'d'](_0x5c37b4),document[_0x509c1e(0x120)+_0x509c1e(0xff)](_0x3093ac[_0x509c1e(0xd0)])[_0x509c1e(0x15f)+'t']='₹'+_0x36aa6a[_0x509c1e(0x1a6)](-0x26be*-0x1+0x8ad+-0x2f69);});function toggleProceedButton(){const _0x1a6eac=_0x4fe6f8,_0x3405b4={'tNyPT':_0x1a6eac(0x18d)+_0x1a6eac(0x1a2),'TLnsv':_0x1a6eac(0x116)+_0x1a6eac(0x14c)+_0x1a6eac(0x19a),'AOkTB':function(_0x124fb8,_0x2222e2){return _0x124fb8>_0x2222e2;},'BdXoa':_0x1a6eac(0x184)},_0x2c2a95=document[_0x1a6eac(0x17e)+_0x1a6eac(0x167)](_0x3405b4[_0x1a6eac(0x197)]),_0x5b203c=document[_0x1a6eac(0x17e)+_0x1a6eac(0xe3)](_0x3405b4[_0x1a6eac(0x156)]),_0x4f37f2=_0x3405b4[_0x1a6eac(0xfb)](_0x5b203c[_0x1a6eac(0x17a)],0x1fea+-0x25fa+0x610);_0x4f37f2?_0x2c2a95[_0x1a6eac(0x12e)][_0x1a6eac(0x13a)](_0x3405b4[_0x1a6eac(0x13f)]):_0x2c2a95[_0x1a6eac(0x12e)][_0x1a6eac(0xfa)](_0x3405b4[_0x1a6eac(0x13f)]);}function clearStorage(){const _0xa616f9=_0x4fe6f8;localStorage[_0xa616f9(0x132)](),location[_0xa616f9(0x151)]();}document[_0x4fe6f8(0x120)+_0x4fe6f8(0xff)](_0x4fe6f8(0xbf)+'ut')[_0x4fe6f8(0x1ac)+_0x4fe6f8(0x18e)](_0x4fe6f8(0x110),function(_0x4e043c){const _0x447cd6=_0x4fe6f8,_0x5ca052={'gySVU':function(_0x51a4b9,_0x2fe093){return _0x51a4b9===_0x2fe093;},'JvOGU':_0x447cd6(0xf1),'zqFLV':function(_0x1b1138){return _0x1b1138();}};_0x5ca052[_0x447cd6(0x1b4)](_0x4e043c[_0x447cd6(0xf8)],_0x5ca052[_0x447cd6(0x1a5)])&&_0x5ca052[_0x447cd6(0x136)](scrollToMatch);});function scrollToMatch(){const _0x2424c5=_0x4fe6f8,_0xfd7721={'ryhWp':_0x2424c5(0xbf)+'ut','bvfMP':_0x2424c5(0xcd)+_0x2424c5(0x10d)+_0x2424c5(0x148),'oBbFG':_0x2424c5(0x1af),'IgfJl':_0x2424c5(0x130),'NiwnO':function(_0x2776b9,_0x30c35e,_0x8e5ea0){return _0x2776b9(_0x30c35e,_0x8e5ea0);},'KRsuI':_0x2424c5(0x1a0)+_0x2424c5(0x1ab)},_0x1e2b58=document[_0x2424c5(0x120)+_0x2424c5(0xff)](_0xfd7721[_0x2424c5(0x11b)])[_0x2424c5(0x155)][_0x2424c5(0x104)]()[_0x2424c5(0x17f)+'e']();if(!_0x1e2b58)return;const _0x3d1df1=document[_0x2424c5(0x17e)+_0x2424c5(0xe3)](_0xfd7721[_0x2424c5(0xcb)]);for(const _0x3c09ff of _0x3d1df1){const _0x5b0327=_0x3c09ff[_0x2424c5(0x15f)+'t'][_0x2424c5(0x17f)+'e']();if(_0x5b0327[_0x2424c5(0x1a1)](_0x1e2b58)){_0x3c09ff[_0x2424c5(0xe5)+_0x2424c5(0x19c)]({'behavior':_0xfd7721[_0x2424c5(0x16e)],'block':_0xfd7721[_0x2424c5(0x165)]});return;}}_0xfd7721[_0x2424c5(0xba)](swal,_0xfd7721[_0x2424c5(0x174)],'');}
+let lastSelectedContainer = null;
+
+window.addEventListener('DOMContentLoaded', loadSelectedItems);
+
+function loadSelectedItems() {
+    const savedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+    let totalPrice = 0;
+    savedItems.forEach(savedItem => {
+        // Select the checkbox based on the name
+        document.querySelectorAll('.checkbox-container').forEach(checkbox => {
+            
+            if (checkbox.dataset.name === savedItem.name) {
+                checkbox.checked = true;
+                const container = checkbox.closest('.checkbox-container');
+                container.classList.add('checked');
+                 totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
+               
+                // Update the quantity display
+                const quantityCountDiv = container.querySelector('.quantitycountdiv');
+                if (quantityCountDiv) {
+                    quantityCountDiv.textContent = ` (${savedItem.quantity})`;
+                }
+            }
+        });
+       
+    });
+    if(totalPrice != 0){
+        document.getElementById('totalAmountWithLabel').textContent = ` Total:₹${totalPrice}`;
+    }
+    
+    //  toggleProceedButton(); // Ensure the proceed button state is updated
+}
+
+document.querySelectorAll('.checkbox-container').forEach(container => {
+    container.addEventListener('click', function (event) {
+        // Ignore clicks on the increment or decrement buttons
+        if (event.target.closest('.incrementbutton')) {
+            return;
+        }
+
+        const checkbox = container.querySelector('.menu-checkbox');
+        checkbox.checked = !checkbox.checked; // Toggle the checkbox
+        container.classList.toggle('checked', checkbox.checked);
+
+        // Check if the increment div already exists
+        const existingIncrementDiv = container.querySelector('.showincrementdiv');
+        if (existingIncrementDiv) {
+            existingIncrementDiv.remove();
+        }
+
+        // Load items from localStorage
+        let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+        const itemName = container.dataset.name;
+        const itemData = {
+            id: container.dataset.id,
+            name: itemName,
+            price: container.dataset.price,
+            quantity: 1
+        };
+        const quantityCountDiv = container.querySelector('.quantitycountdiv');
+
+        if (quantityCountDiv) {
+            quantityCountDiv.textContent = '';
+            // quantityCountDiv.remove();
+        }
+        // Check if item is in localStorage
+        const itemIndex = selectedItems.findIndex(item => item.name === itemName);
+
+        if (!checkbox.checked) {
+            // Remove item from localStorage if unchecked
+            if (itemIndex > -1) selectedItems.splice(itemIndex, 1);
+            container.classList.remove('checked');
+            localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+            return;
+        }
+
+        // Create and append increment div
+        const incrementDiv = document.createElement('div');
+        incrementDiv.className = 'showincrementdiv';
+        incrementDiv.dataset.name = itemName;
+        incrementDiv.innerHTML = `
+            <div class="incrementbutton input">
+                <button data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr minus" aria-label="Decrease by one">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="16" y2="1" stroke="#0064FE" stroke-width="2" class="icon" />
+                    </svg>
+                </button>
+                <div class="qntitynumber dim" id="qntynmb">1</div>
+                <button data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr plus" aria-label="Increase by one">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" stroke-width="2" />
+                        <line y1="8" x2="16" y2="8" stroke="#0064FE" stroke-width="2" />
+                    </svg>
+                </button>
+            </div>
+        `;
+
+        // Load quantity if the item exists in localStorage
+        if (itemIndex > -1) {
+            itemData.quantity = selectedItems[itemIndex].quantity;
+            incrementDiv.querySelector('#qntynmb').textContent = itemData.quantity;
+        }
+
+        // Append the increment div to the container
+        container.appendChild(incrementDiv);
+
+        // Update localStorage
+        if (itemIndex > -1) {
+            selectedItems[itemIndex] = itemData;
+        } else {
+            selectedItems.push(itemData);
+        }
+        localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+    });
+});
+
+
+
+// Helper function to remove item from localStorage
+function removeItemFromLocalStorage(itemName) {
+    let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+    selectedItems = selectedItems.filter(item => item.name !== itemName);
+    localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+}
+document.addEventListener('click', function (event) {
+    // Check if the clicked element is an increment button
+    if (event.target.closest('.buttonincr.plus')) {
+        event.preventDefault(); // Prevent the default action
+
+        const incrementButton = event.target.closest('.buttonincr.plus');
+        const container = incrementButton.closest('.checkbox-container');
+
+        if (container) {
+            // Get the item name and ID from the data attribute
+            const itemName = container.querySelector('.menu-checkbox').dataset.name;
+            const itemId = container.dataset.id; // Assuming each container has a unique ID
+
+            // Get the current quantity from the UI
+            const quantityElement = container.querySelector('#qntynmb');
+            let currentQuantity = parseInt(quantityElement.textContent, 10) || 1;
+
+            // Increment the quantity
+            currentQuantity += 1;
+            quantityElement.textContent = currentQuantity; // Update the UI
+
+            // Update the quantity in localStorage
+            let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+            const itemIndex = selectedItems.findIndex(item => item.id === itemId); // Check by ID
+
+            if (itemIndex !== -1) {
+                // If the item exists, update the quantity
+                selectedItems[itemIndex].quantity = currentQuantity;
+            } else {
+                // If the item doesn't exist, add it
+                selectedItems.push({
+                    id: itemId,
+                    name: itemName,
+                    price: container.querySelector('.menu-checkbox').dataset.price,
+                    quantity: currentQuantity
+                });
+            }
+
+            // Save the updated items to localStorage
+            localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+            // const quantityCountDiv = container.querySelector('.quantitycountdiv');
+            // if (quantityCountDiv) {
+            //     quantityCountDiv.textContent = ` (${currentQuantity})`;
+            // }
+        }
+    }
+
+    // Check if the clicked element is a decrement button
+    if (event.target.closest('.buttonincr.minus')) {
+       
+        event.preventDefault(); // Prevent the default action
+
+        const decrementButton = event.target.closest('.buttonincr.minus');
+        const container = decrementButton.closest('.checkbox-container');
+
+        if (container) {
+            // Get the item name and ID from the data attribute
+            const itemName = container.querySelector('.menu-checkbox').dataset.name;
+            const itemId = container.dataset.id; // Assuming each container has a unique ID
+
+            // Get the current quantity from the UI
+            const quantityElement = container.querySelector('#qntynmb');
+            let currentQuantity = parseInt(quantityElement.textContent, 10) || 1;
+
+            // Decrement the quantity, ensuring it does not go below 1
+            if (currentQuantity > 1) {
+                currentQuantity -= 1;
+                quantityElement.textContent = currentQuantity; // Update the UI
+
+                // Update the quantity in localStorage
+                let selectedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+                const itemIndex = selectedItems.findIndex(item => item.id === itemId); // Check by ID
+
+                if (itemIndex !== -1) {
+                    // If the item exists, update the quantity
+                    selectedItems[itemIndex].quantity = currentQuantity;
+
+                    // Save the updated items to localStorage
+                    localStorage.setItem('salkaravithura', JSON.stringify(selectedItems));
+                    const quantityCountDiv = container.querySelector('.quantitycountdiv');
+                    if (quantityCountDiv) {
+                        quantityCountDiv.textContent = ` (${currentQuantity})`;
+                    }
+                }
+            }
+        }
+    }
+    updateTotalPrice();
+});
+function updateTotalPrice() {
+    const savedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+    let totalPrice = 0;
+
+    savedItems.forEach(savedItem => {
+        totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
+    });
+
+    // Update the total amount label
+    document.getElementById('totalAmountWithLabel').textContent = ` Total:₹${totalPrice}`;
+}
+
+document.getElementById('proceedBtn').addEventListener('click', () => {
+    const savedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
+    const itemsList = document.getElementById('selectedItemsList');
+    itemsList.innerHTML = ''; // Clear existing content
+
+    // Create the table and add a header row
+    const table = document.createElement('table');
+    table.classList.add('table', 'table-bordered'); // Add Bootstrap classes if needed
+
+    // Add the table headers
+    const headerRow = document.createElement('tr');
+    headerRow.innerHTML = `
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Price (₹)</th>
+        <th>Total (₹)</th>
+    `;
+    table.appendChild(headerRow);
+
+    let totalPrice = 0;
+
+    // Add a row for each saved item
+    savedItems.forEach(savedItem => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${savedItem.name}</td>
+            <td style="text-align: center;">${savedItem.quantity}</td>
+            <td style="text-align: end;">₹${savedItem.price}</td>
+            <td style="text-align: end;">₹${(parseFloat(savedItem.price) * savedItem.quantity).toFixed(2)}</td>
+        `;
+        table.appendChild(row);
+
+        totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
+    });
+
+    // Append the table to the container
+    itemsList.appendChild(table);
+
+    // Update the total amount
+    document.getElementById('finalAmount').textContent = `₹${totalPrice.toFixed(2)}`;
+});
+
+function toggleProceedButton() {
+    const proceedButton = document.querySelector('.total-section');
+    const checkedContainers = document.querySelectorAll('.checkbox-container.checked');
+    const anyCheckboxChecked = checkedContainers.length > 0;
+    // console.log(anyCheckboxChecked);
+    if (anyCheckboxChecked) {
+        // incrementbutton.classList.remove('d-none');
+        proceedButton.classList.remove('d-none'); // Show the button
+    } else {
+        // incrementbutton.classList.add('d-none');
+        proceedButton.classList.add('d-none'); // Hide the button
+        // localStorage.clear();
+    }
+}
+
+function clearStorage() {
+    localStorage.clear();
+    location.reload();
+}
+
+document.getElementById("search-input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      scrollToMatch();
+    }
+  });
+  
+  
+  function scrollToMatch() {
+    const searchText = document.getElementById("search-input").value.trim().toLowerCase();
+  
+    if (!searchText) {
+      return; // No search term, do nothing
+    }
+  
+    const menuPostDescElements = document.querySelectorAll(".menu-post-desc, .malayalam");
+  
+    for (const element of menuPostDescElements) {
+      const elementText = element.textContent.toLowerCase();
+  
+      if (elementText.includes(searchText)) {
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+    }
+    swal("No Item found !", "");
+  
+  }
+
+
