@@ -3297,17 +3297,20 @@ select.reservation-fields {
 	/* width: 100%; */
 	/* height: 100%; */
 }
+
 .viewdetbtn {
   
     top: 30px;
     right: 20px;
     position: fixed;
-    background: #2f3640;
+	padding: 3px;
+    background: #ff0000ad;
     color: white;
     border-radius: 10px;
+	font-weight: bold;
     text-align: end;
     cursor: pointer;
-    z-index: 120;
+    z-index: 120;
 }
 
 
