@@ -294,7 +294,6 @@ function toggleProceedButton() {
     const proceedButton = document.querySelector('.total-section');
     const checkedContainers = document.querySelectorAll('.checkbox-container.checked');
     const anyCheckboxChecked = checkedContainers.length > 0;
-    console.log(anyCheckboxChecked);
     if (anyCheckboxChecked) {
         proceedButton.classList.add('d-none'); 
         
