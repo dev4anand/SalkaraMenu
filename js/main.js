@@ -5,25 +5,27 @@ window.addEventListener('DOMContentLoaded', loadSelectedItems);
 function loadSelectedItems() {
     const savedItems = JSON.parse(localStorage.getItem('salkaravithura')) || [];
     let totalPrice = 0;
-    savedItems.forEach(savedItem => {
-        // Select the checkbox based on the name
-        document.querySelectorAll('.checkbox-container').forEach(checkbox => {
+    if (savedItems) {
+        savedItems.forEach(savedItem => {
+            // Select the checkbox based on the name
+            document.querySelectorAll('.checkbox-container').forEach(checkbox => {
 
-            if (checkbox.dataset.name === savedItem.name) {
-                checkbox.checked = true;
-                const container = checkbox.closest('.checkbox-container');
-                container.classList.add('checked');
-                totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
+                if (checkbox.dataset.name === savedItem.name) {
+                    checkbox.checked = true;
+                    const container = checkbox.closest('.checkbox-container');
+                    container.classList.add('checked');
+                    totalPrice += parseFloat(savedItem.price) * savedItem.quantity;
 
-                // Update the quantity display
-                const quantityCountDiv = container.querySelector('.quantitycountdiv');
-                if (quantityCountDiv) {
-                    quantityCountDiv.textContent = ` (${savedItem.quantity})`;
+                    // Update the quantity display
+                    const quantityCountDiv = container.querySelector('.quantitycountdiv');
+                    if (quantityCountDiv) {
+                        quantityCountDiv.textContent = ` (${savedItem.quantity})`;
+                    }
                 }
-            }
-        });
+            });
 
-    });
+        });
+    }
     if (totalPrice != 0) {
         if (isNaN(totalPrice) || totalPrice === undefined) {
             document.getElementById('totalAmountWithLabel').textContent = 'Total: ₹NA';
@@ -32,7 +34,7 @@ function loadSelectedItems() {
         }
     }
 
-    //  toggleProceedButton(); // Ensure the proceed button state is updated
+    //   toggleProceedButton(); // Ensure the proceed button state is updated
 }
 
 document.querySelectorAll('.checkbox-container').forEach(container => {
@@ -292,14 +294,13 @@ function toggleProceedButton() {
     const proceedButton = document.querySelector('.total-section');
     const checkedContainers = document.querySelectorAll('.checkbox-container.checked');
     const anyCheckboxChecked = checkedContainers.length > 0;
-    // console.log(anyCheckboxChecked);
+    console.log(anyCheckboxChecked);
     if (anyCheckboxChecked) {
-        // incrementbutton.classList.remove('d-none');
-        proceedButton.classList.remove('d-none'); // Show the button
+        proceedButton.classList.add('d-none'); 
+        
     } else {
-        // incrementbutton.classList.add('d-none');
-        proceedButton.classList.add('d-none'); // Hide the button
-        // localStorage.clear();
+        proceedButton.classList.remove('d-none');
+        
     }
 }
 
