@@ -3301,6 +3301,7 @@ select.reservation-fields {
 .viewdetbtn {
   
     top: 30px;
+	z-index: 3000;
     right: 20px;
     position: fixed;
 	padding: 3px;
@@ -3310,7 +3311,7 @@ select.reservation-fields {
 	font-weight: bold;
     text-align: end;
     cursor: pointer;
-    z-index: 120;
+  
 }
 
 
