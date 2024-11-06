@@ -85,13 +85,13 @@ document.querySelectorAll('.checkbox-container').forEach(container => {
         incrementDiv.dataset.name = itemName;
         incrementDiv.innerHTML = `
             <div class="incrementbutton input">
-                <button  title="Add one more item" data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr minus" aria-label="Decrease by one">
+                <button  title="Remove the item" data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr minus" aria-label="Decrease by one">
                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="1" x2="16" y2="1" stroke="#0064FE" stroke-width="2" class="icon" />
                     </svg>
                 </button>
                 <div class="qntitynumber dim" id="qntynmb">1</div>
-                <button  title="Remove the item" data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr plus" aria-label="Increase by one">
+                <button  title="Add one more item" data-price="${itemData.price}" data-id="${itemData.id}" class="buttonincr plus" aria-label="Increase by one">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                         <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" stroke-width="2" />
                         <line y1="8" x2="16" y2="8" stroke="#0064FE" stroke-width="2" />
